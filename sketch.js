@@ -82,7 +82,7 @@ function setup() {
    // do something for nfc1
       background(246, 224, 198);
       textAlign(CENTER);
-      textSize(15);
+      textSize(10);
       fill(142, 62, 58);
       text("Hey, sweetie", windowWidth/2, windowHeight/5);
       text("It's necessary to use your phone", windowWidth/2, windowHeight/5*1.5);
