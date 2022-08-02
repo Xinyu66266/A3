@@ -13,6 +13,8 @@ let img3;
 
 let imgPosition = 0;
 
+let myVar = setInterval(myTimer ,1000);
+
 
 let message; // message we use to send to pubnub
 
@@ -124,35 +126,13 @@ function setup() {
       noParams = true;
    //no paramters do something else
     }
-  
-
-  /*
-    if (noParams == false) {
-      sendTheMessage();
-    } else {
-      fetchMessages();
-      noStroke();
-      fill(255, 0 , 0);
-      text("Home (NFC1)", windowWidth*0.25, windowHeight/2);
-      fill(0, 0, 255);
-      text("School (NFC2)", windowWidth*0.75, windowHeight/2);
-
-    }
-    */
 }
   
 function draw() {
 
   
 }
-/*
-function mousePressed() {
 
-fetchMessages();
-
-
-}
-*/
 function fetchMessages() {
 
 console.log("fetching");
@@ -217,3 +197,24 @@ function readIncoming(inMessage) {
   console.log(inMessage);
   drawMessages();
 }
+
+function myTimer() {
+  const d = new Date();
+  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+  }
+
+
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    x.innerHTML = navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude + 
+        "<br>Longitude: " + position.coords.longitude;
+     }
