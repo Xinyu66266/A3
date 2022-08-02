@@ -82,7 +82,7 @@ function setup() {
    // do something for nfc1
       background(246, 224, 198);
       textAlign(CENTER);
-      textSize(20);
+      textSize(15);
       fill(142, 62, 58);
       text("Hey, sweetie", windowWidth/2, windowHeight/5);
       text("It's necessary to use your phone", windowWidth/2, windowHeight/5*1.5);
@@ -98,6 +98,7 @@ function setup() {
     } else if (NFC2 != null) {
    // do something for nfc2
       background(246, 224, 198);
+      textSize(20);
       fill(255, 255, 255);
       text("Hey, dear", windowWidth/2, windowHeight/5*1.5);
       text("Be brave", windowWidth/2, windowHeight/5*2);
