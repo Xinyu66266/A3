@@ -122,7 +122,7 @@ function setup() {
       fill(206, 152, 86);
       text("but,", windowWidth*0.25, windowHeight/4+50);
       fill(86, 151, 171);
-      text("Why do I feel more alone?", windowWidth*0.25, windowHeight/4+100);
+      text("Why do I feel more lonely?", windowWidth*0.25, windowHeight/4+100);
       //text("Offline", windowWidth*0.75, windowHeight/2);
       noParams = true;
    //no paramters do something else
